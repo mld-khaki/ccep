@@ -12,7 +12,7 @@ git clone https://github.com/mld-khaki/ccep.git
 
 2. **Navigate into the project directory:**
 ```bash
-cd repo-name
+cd ccep
 ```
 
 3. **Create and activate a virtual environment:**
