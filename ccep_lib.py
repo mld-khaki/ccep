@@ -521,6 +521,9 @@ def epochs_with_orientation_flip(
         end_idx = ev_samp + seg_end_samp
         
         if start_idx < 0 or end_idx > len(evoked_signal):
+            print(f"Start index = {start_idx}")
+            print(f"End index = {end_idx}, evoked signal length = {len(evoked_signal)}")
+            
             flip_diagnostics.append({
                 'event_idx': i_ev,
                 'event_sample': ev_samp,

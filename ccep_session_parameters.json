@@ -1,0 +1,65 @@
+{
+    "subject": {
+        "id": "153"
+    },
+    "session": {
+        "id": "ses-001",
+        "folder": "ses-001",
+        "run": 1,
+        "name_suffix": "_reduced_InsulaStim2"
+    },
+    "channels": {
+        "stim_a": "LPIn3",
+        "stim_b": "LPIn4",
+        "evoked": "LAIn9"
+    },
+    "stim": {
+        "current": "1"
+    },
+    "paths": {
+        "main_folder": "../ccep_hf/ccep_lhsc_uwo/sub-153/ses-001/ieeg/",
+        "valid_pulses_json": "sub114_selected_stim_peaks_for_ccep.json"
+    },
+    "options": {
+        "sync_source": "stim",
+        "avg_source": "evoked",
+        "enable_polarity_flip": true,
+        "final_polarity": -1,
+        "apply_hamming": false,
+        "hamming_power": 1,
+        "read_events_edf0_tsv1": true
+    },
+    "filter": {
+        "bandpass_low": 0.5,
+        "bandpass_high": 500,
+        "enable_bandpass": true,
+        "enable_notch": true,
+        "enable_detrend": true,
+        "enable_median": true,
+        "median_kernel": 7,
+        "enable_movavg": true,
+        "movavg_kernel": 1
+    },
+    "windows": {
+        "pre_seconds": 7.0,
+        "length_seconds": 15.0
+    },
+    "erdetect": {
+        "peak_search": [0.0, 0.5],
+        "response_search": [0.01, 0.05],
+        "N1_window": [0.01, 0.1],
+        "N2_window": [0.075, 0.3],
+        "baseline": [-1.0, -0.1],
+        "baseline_factor": 0.9,
+        "baseline_minstd": 5.0,
+        "use_adaptive_threshold": true,
+        "orientation_window_ms": 50.0
+    },
+    "epoch": {
+        "seg_ms": [-100, 500],
+        "baseline_ms": [-25.0, -5.0],
+        "peak_search_ms": [20.0, 190.0],
+        "peak_prominence_z": 7.0,
+        "detrend_max_curv": 1e-2
+    }
+}
